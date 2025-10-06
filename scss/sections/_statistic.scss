@@ -1,11 +1,21 @@
 .statistic {
-    padding-top: 455px;
-    padding-bottom: 460px;
+        padding-top: 370px;
+    padding-bottom: 370px;
 background-image: url(../img/bg-mobile-1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+
+    @media screen and (min-width: 1000px) {
+        padding-top: 415px;
+    padding-bottom: 420px;
+  }
+  @media screen and (min-width: 1200px) {
+        padding-top: 455px;
+    padding-bottom: 460px;
+  }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image:
@@ -39,7 +49,7 @@ background-image: url(../img/bg-mobile-1x.png);
   }
 
   &__group {
-    padding-top: 50px;
+    padding-top: 20px;
     border-radius: 20px;
 background: rgba(0, 0, 0, 0.60);
 position: absolute;
@@ -48,48 +58,148 @@ top: 200px;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 1377px;
-height: 950px;
+  width: 100%;
+height:780px;
+
+  @media screen and (min-width: 480px) {
+      width: 450px;
+height:750px;
+padding-top: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+       height: 780px;
+       width: 780px;
+       align-items: center;
+       padding-top: 50px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    width: 1000px;
+    height: 830px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1140px;
+    height: 900px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        width: 1377px;
+        height: 950px;
+  }
   }
 
   
   &__title {
     color: #FFB82F;
 font-family: "Inter";
-font-size: 32px;
+font-size: 20px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.64px;
+margin-bottom: 20px;
+text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 28px;
 margin-bottom: 35px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 32px;
+  }
   }
 
 
   &__listfirst {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     display: flex;
-    gap: 15px;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+      @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+    @media screen and (min-width: 1000px) {
+  margin-bottom: 35px;
+  gap: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+margin-bottom: 40px;
+  }
+
   }
 
   &__toplist {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+          @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     gap: 5px;
+  }
+
+    @media screen and (min-width: 1000px) {
+  margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+margin-bottom: 40px;
+  }
   }
 
   &__item {
     color: #FFF;
 font-family: "Inter";
-font-size: 18px;
+font-size: 12px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.36px;
-border-radius: 10px;
+border-radius: 7px;
 background: #252543;
-padding: 15px 25px;
+padding: 10px 15px;
 border: none;
 outline: none;
 transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding: 11px 18px;
+    border-radius: 8px;
+  }
+
+    @media screen and (min-width: 1000px) {
+  font-size: 15px;
+  padding: 13px 20px;
+  border-radius: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 16px;
+padding: 15px 25px;
+border-radius: 10px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 18px;
+  }
 
 
 &:hover {
@@ -105,16 +215,42 @@ transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #FFF;
 text-align: center;
 font-family: "Inter";
-font-size: 18px;
+font-size: 10px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.36px;
 border-radius: 10px;
 background: #252543;
-padding: 15px 40px;
+padding: 11px 25px;
 border: none;
 outline: none;
 transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+border-radius: 7px;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding: 13px 30px;
+    border-radius: 8px;
+  }
+
+    @media screen and (min-width: 1000px) {
+  font-size: 15px;
+  padding: 15px 35px;
+  border-radius: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 16px;
+padding: 15px 40px;
+border-radius: 10px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 18px;
+  }
+
+
 
 &:hover {
   background: #8080b4;
@@ -128,10 +264,34 @@ transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
   &__linein {
-width: 900px;
+width: 100%;
 height: 1px;
 background: #22223a;
+margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    width: 750px;
+    margin-bottom: 30px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    width: 900px;
+    margin-bottom: 38px;
+  }
+
+    @media screen and (min-width: 1200px) {
 margin-bottom: 45px;
+  }
+  }
+
+
+  &__table {
+    display: block;
+    overflow-x: scroll;
+
+      @media screen and (min-width: 768px) {
+        overflow-x: visible;
+  }
   }
 
 
@@ -139,13 +299,35 @@ margin-bottom: 45px;
   &__col-num {
     color: #FFF;
 font-family: "Inter";
-font-size: 20px;
+font-size: 13px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
-padding-right: 110px;
+padding-right: 30px;
 text-align: start;
 padding-bottom: 8px;
+
+  @media screen and (min-width: 480px) {
+    padding-right: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    padding-right: 90px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    font-size: 17px;
+    padding-right: 110px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 18px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 20px;
+  }
   }
   
 
@@ -153,23 +335,59 @@ padding-bottom: 8px;
   &__texttabl {
         color: #FFF;
 font-family: "Inter";
-font-size: 20px;
+font-size: 13px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 text-align: start;
-padding-right: 130px;
+padding-right: 60px;
 padding-bottom: 8px;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    padding-right: 110px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    font-size: 17px;
+    padding-right: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 18px;
+padding-right: 130px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 20px;
+  }
   }
 
     &__texttabl2 {
         color: #FFF;
 font-family: "Inter";
-font-size: 20px;
+font-size: 13px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 text-align: start;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 18px;
+  }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 20px;
+  }
   }
 
 
@@ -180,4 +398,14 @@ text-align: start;
 
 .firstpl {
     color: #FFB82F;
+}
+
+
+.statistic__table {
+  scrollbar-color: #464674 #15151f;                  /* thumb | track */
+}
+
+.statistic__table::-webkit-scrollbar-track {
+  background: #15151f;                               /* трек */
+  border-radius: 8px;
 }
