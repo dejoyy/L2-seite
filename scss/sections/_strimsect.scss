@@ -2,11 +2,41 @@
     background: #111117;
     padding-top: 45px;
     padding-bottom: 79px;
+    position: relative;
 
-    &__linesecond {
-        position: absolute;
-        top: 1695px;
-    }
+  &__linesecond {
+position: absolute;
+display: none;
+
+    @media screen and (min-width: 870px) {
+    display: block;
+    top: -7px;
+  }
+  }
+
+  &__linesecond-tablet {
+    position: absolute;
+    display: none;
+    
+          @media screen and (min-width: 570px) {
+    display: block;
+    top: -10px;
+  }
+
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+  }
+
+  &__linesecond-mob {
+    position: absolute;
+    display: block;
+    top: -11px;
+
+      @media screen and (min-width: 570px) {
+    display: none;
+  }
+  }
 
     &__firstgroup {
         display: flex;

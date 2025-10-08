@@ -2,6 +2,7 @@
     background: #0E0E1A;
     padding-top: 70px;
     padding-bottom: 50px;
+    position: relative;
 
     &__maingroup {
         display: flex;
@@ -153,4 +154,40 @@ transition: color 250ms, text-shadow 300ms;
     0 3px 25px #1c6bff;
 }
     }
+
+
+    &__line {
+position: absolute;
+display: none;
+
+    @media screen and (min-width: 870px) {
+    display: block;
+    top: -9px;
+  }
+}
+
+
+  &__line-tablet {
+    position: absolute;
+    display: none;
+    
+          @media screen and (min-width: 570px) {
+    display: block;
+    top: -10px;
+  }
+
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+  }
+
+  &__line-mob {
+    position: absolute;
+    display: block;
+    top: -11px;
+
+      @media screen and (min-width: 570px) {
+    display: none;
+  }
+  }
 }

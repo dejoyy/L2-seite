@@ -2,7 +2,7 @@
   padding-top: 58px;
   padding-bottom: 50px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
       @media screen and (min-width: 1000px) {
     padding-top: 108px;
@@ -62,9 +62,40 @@
 
   &__line {
     position: absolute;
-    top: 981px;
+    display: none;
+
+        @media screen and (min-width: 870px) {
+    display: block;
+    top: -10px;
+  }
+  }
+
+  &__line-tablet {
+    position: absolute;
+    display: none;
+    
+          @media screen and (min-width: 570px) {
+    display: block;
+    top: -10px;
+  }
+
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+  }
+
+  &__line-mob {
+    position: absolute;
+    display: block;
+    top: -11px;
+
+      @media screen and (min-width: 570px) {
+    display: none;
+  }
   }
   
+
+
 
   &__block {
     border: 1px solid #D19722;
@@ -74,13 +105,23 @@
     align-items: center;
     justify-content: center;
     gap: 9px;
+    width: 315px;
+    height: 80px;
+
+      @media screen and (min-width: 480px) {
     width: 365px;
     height: 90px;
   }
+  }
 
   &__ratesize {
+    width: 132px;
+    height: 27px;
+
+      @media screen and (min-width: 480px) {
     width: 142px;
     height: 31px;
+  }
   }
 
   &__ratebtn {
@@ -103,8 +144,13 @@
     background: rgba(24, 27, 22, 0.90);
     display: flex;
     padding: 26px 22px;
-    gap: 142px;
+    gap: 122px;
+    width: 315px;
+
+      @media screen and (min-width: 480px) {
     width: 365px;
+    gap: 142px;
+  }
   }
 
   &__minigroup {
@@ -159,8 +205,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 91.25px;
+    width: 78.75px;
+height: 70px;
+
+  @media screen and (min-width: 480px) {
+        width: 91.25px;
 height: 80px;
+  }
   }
 
   &__title {
@@ -186,24 +237,37 @@ height: 80px;
     border-right: 1px solid #D19722;
     border-left: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 29px 206px 28px 26px;
+    padding: 24px 176px 23px 21px;
+    width: 315px;
+
+      @media screen and (min-width: 480px) {
     width: 365px;
+    padding: 29px 206px 28px 26px;
+  }
   }
 
   &__title {
     color: #FFF;
     font-family: "Noto Sans";
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.45px;
+
+      @media screen and (min-width: 480px) {
+    font-size: 23px;
+  }
   }
 
   &__scondblock {
     border: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
     padding: 26px 0 10px 26px;
+    width: 315px;
+
+      @media screen and (min-width: 480px) {
     width: 365px;
+  }
   }
 
   &__list {
@@ -230,6 +294,7 @@ height: 80px;
     line-height: normal;
     letter-spacing: 0.35px;
     margin-bottom: 8px;
+
   }
 
   &__time {
@@ -249,8 +314,13 @@ height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 315px;
+    height: 73px;
+
+      @media screen and (min-width: 480px) {
     width: 365px;
     height: 80px;
+  }
   }
 
   &__btnforum {
@@ -316,6 +386,11 @@ height: 30px;
     letter-spacing: 0.40px;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-left: 10px;
+
+      @media screen and (min-width: 480px) {
+    margin-left: 0px;
+  }
 
       @media screen and (min-width: 768px) {
     margin-top: 245px;
@@ -329,7 +404,9 @@ height: 30px;
 
   &__sociallist {
     display: flex;
-    gap: 19px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 
       @media screen and (min-width: 480px) {
         gap: 23px;

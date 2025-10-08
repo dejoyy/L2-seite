@@ -44,8 +44,16 @@ background-image: url(../img/bg-mobile-1x.png);
 
 
   &__between {
-      padding-bottom: 270px;
+      padding-bottom: 210px;
   background: #111117;
+
+    @media screen and (min-width: 480px) {
+      padding-bottom: 240px;
+  }
+
+    @media screen and (min-width: 768px) {
+    padding-bottom: 270px;
+  }
   }
 
   &__group {
@@ -306,6 +314,7 @@ letter-spacing: 0.48px;
 padding-right: 30px;
 text-align: start;
 padding-bottom: 8px;
+    padding-left: 10px;
 
   @media screen and (min-width: 480px) {
     padding-right: 60px;
@@ -314,6 +323,7 @@ padding-bottom: 8px;
   @media screen and (min-width: 768px) {
     font-size: 15px;
     padding-right: 90px;
+        padding-left: 0px;
   }
 
     @media screen and (min-width: 1000px) {
@@ -340,7 +350,7 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 text-align: start;
-padding-right: 60px;
+padding-right: 50px;
 padding-bottom: 8px;
 
 
@@ -372,9 +382,11 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 text-align: start;
+padding-right: 10px;
 
   @media screen and (min-width: 768px) {
     font-size: 15px;
+    padding-right: 0px;
   }
 
     @media screen and (min-width: 1000px) {
