@@ -2892,8 +2892,13 @@ html, body {
 }
 .donate__list {
   display: flex;
-  gap: 9px;
+  gap: 5px;
   margin-bottom: 23px;
+}
+@media screen and (min-width: 480px) {
+  .donate__list {
+    gap: 9px;
+  }
 }
 .donate__item {
   border-radius: 5px;
@@ -2954,21 +2959,27 @@ html, body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
   margin-bottom: 18px;
 }
 @media screen and (min-width: 768px) {
   .donate__paymantlist {
     margin-bottom: 26px;
+    gap: 8px;
   }
 }
 .donate__itempay {
-  padding: 10px 25px;
+  padding: 7px 5px;
   border-radius: 5px;
   background: #252543;
   cursor: pointer;
   transition: background-color 380ms;
+}
+@media screen and (min-width: 480px) {
+  .donate__itempay {
+    padding: 10px 25px;
+  }
 }
 .donate__itempay:hover {
   background-color: #4b4b75;
@@ -3007,10 +3018,15 @@ html, body {
 .donate__choice {
   border-radius: 5px;
   background: #252543;
-  padding: 10px 25px;
+  padding: 7px 7px;
   margin-bottom: 37px;
   cursor: pointer;
   transition: background-color 380ms;
+}
+@media screen and (min-width: 480px) {
+  .donate__choice {
+    padding: 10px 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   .donate__choice {
@@ -3169,7 +3185,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 872px;
+  height: 772px;
 }
 @media screen and (min-width: 1000px) {
   .donate__secondgr {
@@ -3184,7 +3200,12 @@ html, body {
 .donate__blocks {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 15px;
+}
+@media screen and (min-width: 480px) {
+  .donate__blocks {
+    gap: 22px;
+  }
 }
 .donate__block {
   border-radius: 5px;
@@ -3703,7 +3724,7 @@ html, body {
 }
 
 .between {
-  padding-bottom: 1500px;
+  padding-bottom: 1200px;
   background: #111117;
 }
 @media screen and (min-width: 480px) {

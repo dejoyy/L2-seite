@@ -138,8 +138,12 @@ margin-bottom: 15px;
 
 &__list {
   display: flex;
-  gap: 9px;
+  gap: 5px;
   margin-bottom: 23px;
+
+    @media screen and (min-width: 480px) {
+    gap: 9px;
+  }
 }
 
 
@@ -201,22 +205,27 @@ text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
     justify-content: center;
     margin-bottom: 18px;
 
       @media screen and (min-width: 768px) {
     margin-bottom: 26px;
+    gap: 8px;
   }
 }
 
 
 &__itempay {
-  padding: 10px 25px;
+  padding: 7px 5px;
   border-radius: 5px;
 background: #252543;
 cursor: pointer;
 transition: background-color 380ms;
+
+  @media screen and (min-width: 480px) {
+     padding: 10px 25px;
+  }
 
 &:hover {
   background-color: #4b4b75;
@@ -256,10 +265,14 @@ height: 58px;
 &__choice {
   border-radius: 5px;
 background: #252543;
-    padding: 10px 25px;
+    padding: 7px 7px;
 margin-bottom: 37px;
 cursor: pointer;
 transition: background-color 380ms;
+
+  @media screen and (min-width: 480px) {
+        padding: 10px 25px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 51px;
@@ -404,7 +417,7 @@ background: rgba(0, 0, 0, 0.60);
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 872px;
+height: 772px;
 
     @media screen and (min-width: 1000px) {
     height: 1172px;
@@ -419,7 +432,11 @@ height: 872px;
 &__blocks {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 15px;
+
+    @media screen and (min-width: 480px) {
+    gap: 22px;
+  }
 }
 
 &__block {
@@ -881,7 +898,7 @@ width: 210px;
 
 
 .between {
-  padding-bottom: 1500px;
+  padding-bottom: 1200px;
   background: #111117;
 
   @media screen and (min-width: 480px) {
